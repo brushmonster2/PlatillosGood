@@ -1,0 +1,404 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+}
+nav{
+    padding: 20px 50px;
+    display: flex;
+    align-items: right;
+    justify-content: space-between;
+  }
+  #logillo{
+    left:  -30%;
+    position: relative;
+    
+  }
+  ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 6px 20px;
+    font-weight: 500;
+    font-size: 1.7rem;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  }
+  ul li:hover{
+    background-color: #e7d84ee1;
+    border-radius: 25px;
+    text-decoration: none;
+  }
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: #ffffff;
+    padding-top: 80px;
+    background-image: url(https://wallup.net/wp-content/uploads/2017/11/22/354065-food-hamburgers-minimalism.jpg);
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin: 10px 0px;
+    margin-left: 10px;
+}
+img {
+    width: 320px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+header{
+    display: flex;
+  
+    gap:15%;
+    height: 70px;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background-color: black;
+
+}
+.scroll{
+    background-color: aliceblue;
+    box-shadow: .1rem .2rem .3rem #333;
+}
+.scroll img{
+    filter: invert(15%);
+}           
+.scroll h1{
+    color: #000000;
+}
+.carrito{
+    filter: invert(100%);
+    width: 45px;
+    height: auto;
+    position: absolute;
+    top: 14px;
+    left: 1500px;
+    cursor: pointer;
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+.contenedor>div{
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    background-color: #000000;
+    border-radius: 20px;
+}
+.contenedor>div:hover{
+    background-color: #2a2c30da;
+}
+
+.informacion{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:15px;
+}
+.informacion>p:first-child{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+}
+.informacion .precio {
+    font-size: 20px;
+    font-weight: 500;
+}
+.informacion .precio span{
+    font-size: 17px;
+    font-weight: 300;
+}
+.informacion button{
+    background-color: #263143;
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+
+    font-size: 17px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.informacion button:hover{
+    background-color: #2D4263;
+}
+
+.infromacio button:active{
+    background-color: white;
+    color: black;
+}
+
+.diseñoNumero {
+    padding: 10px;
+    background-color: red;
+    border-radius: 200%;
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    position: relative;
+    top: 5px;
+
+    left: 450px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorCompra{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0px;
+    background-color: rgba(51, 51, 51, 0.6);
+    flex-direction:column;
+    gap:35px;
+    z-index: 2;
+}
+
+.informacionCompra{
+    width: 500px;
+    height: 500px;
+    background-color: #2D4263;
+    border-radius: 25px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+}
+
+.informacionCompra h2{
+    font-weight: 300;
+    margin: 50px 0px 0px 50px;
+    font-size: 32px;
+    width: 100%;
+}
+
+.x{
+    padding-top: 30px;
+    padding-right: 30px;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+}
+
+.productosCompra{
+    font-size: 17px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 450px;
+    height: 30%;
+    overflow-y: auto;
+    margin-top: 50px;
+}
+
+.productosCompra > div {
+    margin: 0px 45px;
+    padding: 20px 0px;
+    width: auto;
+    border-bottom: 1px dotted black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.productosCompra::-webkit-scrollbar{
+    width: 7px;
+    background-color: #141C29;
+    border-radius: 5px;
+}
+
+.productosCompra::-webkit-scrollbar-thumb{
+    background: white ;
+    border-radius: 3px;
+}
+
+.img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.productosCompra img{
+    width: 25px;
+    height: auto;
+    margin-right:10px;
+    border-bottom: none ;
+    cursor: pointer;
+}
+
+.total{
+    z-index: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 150px;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.total span{
+    font-weight: 300;
+}
+
+.contenedorCompra > button{
+    z-index: 1;
+    background-color: #263143;
+    width: 300px;
+    height: 45px;
+    border-radius: 10px ;
+    border: none;
+
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.contenedorCompra > button:hover{
+    background-color: white;
+    color: black;
+}
+
+.none>div,
+.none button, 
+.none p{
+    width: 0px;
+    height: 0px;
+    font-size: 0px;
+    border: 0px;
+}
+
+.soldOut{
+    background-color: red;
+    padding: 7px 10px;
+    border-radius: 10px;
+}
+.botonTrash{
+    background-color: rgba(0, 0, 0, 0);
+    border:none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*esta tambien*/
+.modal {
+    position: fixed;
+    z-index: 1;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(6, 7, 7, 0.822);
+    display: flex;
+    display: none;
+  }
+
+
+
+  
+  
+  .modal img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border: 3px solid black;
+    border-radius: 15%;
+  }
+  
+  .modal h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .modal p {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: left ;
+  }
+  
+  .modal button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+  
+  
+  .modal button:hover {
+    background-color: #d2e006;
+    color: rgb(3, 3, 3);
+  }
+
+
+  .imagenDetalle{
+    height: 800px;
+    margin-top: 50px;
+    width: 700px;
+  }
+  .TextoDetalle{
+    color: #f7efef;
+    top: 150px;
+    left: 900px;
+    position: fixed;
+    font-family: 'Space Grotesk', sans-serif;
+   
+  }
+  .PrecioDetalle{
+    color: #f8f4f4;
+    top: 200px;
+    left: 900px;
+    position: fixed;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+  .DescripcionDetalle{
+    color: #f7f4f4;
+    top: 250px;
+    left: 900px;
+    position: fixed;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+  .botondetalle{
+    background-color: #000;
+    height: 30px;
+    width: 200px;
+    color: #fff;
+    position: fixed;
+    border-radius: 4px;
+    text-align: center;
+   top: 350px;
+    left: 900px;
+  }
+  .inputdetalle{
+    top: 300px;
+    position: fixed;
+    color: #fcf7f7;
+    width: 70px;
+    left:   900px;
+  }
+  .botoncerrar{
+    margin-top: 20px;
+    height: 40px;
+    width: 100px;
+    border-radius: 7px;
+    border: none;
+    color: rgb(255, 255, 255);
+    left: 1300px;
+    position: fixed;
+    font-size: 20px;
+    background-color: black;
+}

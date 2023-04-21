@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/estilos_galeria.css" rel="stylesheet" type="text/css">
+    <title>Productos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+        
+</head>
+
+<body>
+    <header id="header">
+        <h1>tacos pepe</h1>
+     
+        <nav>
+          <ul class="nav justify-content-right">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./admin.html">admin</a>
+            </li>
+          </ul>
+        </nav>
+        <div>
+          <img id="carrito" class="carrito" src="./img/anadir-al-carrito.png" alt="">
+          <div id="numero"></div>
+      </div>
+ 
+    </header>
+
+    <main>
+        <div id="contenedor" class="contenedor"> </div>
+        
+    </main>
+    
+    <div id="contenedorCompra">
+        <div class="informacionCompra" id="informacionCompra">
+   
+            <p class="x" id="x">x</p>
+            
+        </div>
+
+        <div class="productosCompra" id="productosCompra"></div>
+        <div class="total" id="total"></div>
+          <button id="detallescompra" >detallesCompra</button>
+       
+       
+    </div>
+    <a href=""></a>
+    <script src="./js/galeria.js"></script>
+</body>
+ <!-- esta tambien -->
+<div id="miModal" class="modal">
+  <div class="modal-content">
+    
+    <span class="close">&times;</span>
+    <img class="imagenDetalle"id="modalImagen">
+    <button class="botoncerrar" onclick="ocultarDetalle()">Regresar</button>
+    <h2 class="TextoDetalle" id="modalNombre"></h2>
+    <p class="PrecioDetalle" id="modalPrecio"></p>
+    <p class="DescripcionDetalle" id="modalDescripcion"></p>
+    <input class="inputdetalle" type="number" min="0"  value="0" ></input> 
+    <button class="botondetalle" id="btncomprar" >Comprar</button>
+  </div>
+</div>
+ <!-- esta tamvien -->
+
+</html>

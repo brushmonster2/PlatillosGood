@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    
+    <link rel="stylesheet" href="./css/carrito.css">
+	<title>Carrito</title>
+</head>
+<body> 
+    <div id="caja" >
+	<h1>"Detalles De Carrito"🛒🤓</h1>
+    <a href="./galeria.html">
+        <button id="botones">seguir comprando</button>
+    </a>
+    <div id="productos-carrito"></div>
+    <p>Total: $<span id="total"></span></p>
+    <button id="vaciar" onclick="vaciarCarrito()">Vaciar carrito🛒</button>
+
+    
+    <div id="productos-carrito"></div>
+    <div id="resumen-compra"></div>
+  <div id="formulario">
+    <form id="factura-form">
+        <label for="nombre" class="formulario" >Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required> <br> <br>    
+      
+        <label for="direccion" class="formulario">Dirección:</label>
+        <input type="text" id="direccion" name="direccion" required> <br> <br>
+      
+        <label for="ciudad" class="formulario">Ciudad:</label>
+        <input type="text" id="ciudad" name="ciudad" required> <br> <br>
+      
+        <label for="telefono" class="formulario">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required> <br> <br> 
+      
+        <button id="factura" type="submit">Generar factura</button>
+      </form>
+  </div>
+      
+    
+
+	<script src="./js/carrito.js"></script>
+
+    <img src="" alt="">
+</div>
+</body>
+</html>
